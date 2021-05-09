@@ -1,1 +1,1 @@
-GET http://localhost:8080/scrapping/start
+GET http://localhost:8080/scrapping/start?url=https://www.sedna.com/
