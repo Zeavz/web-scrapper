@@ -27,8 +27,9 @@ public class ScrapperServiceImpl implements ScrapperService {
   @Override
   public String scrapeSite(String url) throws IOException {
     this.domainUrl = url;
+
     scrapeUrl(url);
-    System.out.println(siteMap.size());
+
     return new ObjectMapper().writeValueAsString(siteMap);
   }
 

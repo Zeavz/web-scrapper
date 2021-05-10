@@ -18,7 +18,6 @@ public class ScrapperController {
 
     @GetMapping("scrapping/start")
     public String startScrapping(@RequestParam String url) throws IOException {
-        System.out.println(url);
         return scrapperService.scrapeSite(url);
     }
 }
