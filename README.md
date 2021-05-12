@@ -9,13 +9,14 @@ curl to trigger the webcrawler:
   
   The output will be as follows:
   
-  {[\
-  &nbsp;&nbsp;"routes": these are the main routes on the domain of this webpage {\
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"assets": This is a list of all assets found on the current route,\
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"outboundLinks": These are the links that could be navigated to from the current route\
-  &nbsp;&nbsp;}\
+  ```
+  {[
+    "routes": these are the main routes on the domain of this webpage {
+      "assets": This is a list of all assets found on the current route,
+      "outboundLinks": These are the links that could be navigated to from the current route
+    }
   ]}
-  
+  ```
   
   To build the project run
   `./mvnw clean install`
